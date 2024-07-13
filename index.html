@@ -29,10 +29,16 @@
 <script type="text/javascript">
 let entity = document.querySelectorAll(".entity");
     entity.forEach(function (a,i){
+        
+        a.addEventListener("click",()=>{
+            entity[i].innerHTML = "X"
+            console.log("hello")
+        })
         a.addEventListener("touchstart",()=>{
             entity[i].innerHTML = "X"
             console.log("hello")
         })
+        
     })
 </script>
 </html>
