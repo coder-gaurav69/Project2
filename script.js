@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 document.addEventListener('DOMContentLoaded', (event) => {  
     Match.addEventListener("change",(event)=>{
         Match_value = event.target.value;
-        result.innerHTML = GameMode.value
+        result.innerHTML = Match_value
 
     })
 });
