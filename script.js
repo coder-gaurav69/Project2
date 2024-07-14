@@ -22,6 +22,7 @@ let Match_value;
 document.addEventListener('DOMContentLoaded', (event) => {
     mode.addEventListener("change",(event)=>{
         GameMode = event.target
+        result.innerHTML = GameMode.value
         if(GameMode.value == "friend"){    
         document.querySelector(".User").innerHTML = "User1_score (X):";
         document.querySelector(".User_type").innerHTML = "User2_score (O):";
@@ -34,7 +35,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 document.addEventListener('DOMContentLoaded', (event) => {  
     Match.addEventListener("change",(event)=>{
-        Match_value = event.target.value;    
+        Match_value = event.target.value;
+        result.innerHTML = GameMode.value
+
     })
 });
 
